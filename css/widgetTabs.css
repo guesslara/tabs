@@ -1,0 +1,37 @@
+.wTabsContainer {
+  border: 1px solid #FF0000;
+}
+
+.wTabsContainer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.wTabsContainer ul li {
+  display: inline-block;
+  border: 1px solid #FF0000;
+}
+
+.wTabsContainer ul li a {
+  display: block;
+  text-decoration: none;
+  padding: .3em;
+}
+
+.wTabsContainer ul li a:hover {
+  background: #E1E1E1;
+}
+
+.wTabsContainer .wContentTab {
+  border: 1px solid blue;
+  height: 20em;
+}
+
+.mostrarTab {
+  display: block;
+}
+
+.wTabClose {
+  background: url(img/x.png) no-repeat;
+}
