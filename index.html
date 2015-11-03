@@ -2,30 +2,33 @@
 <html lang="es">
 <head>
 	<title>Tabs</title>
-	<meta chasrset="UTF-8">
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
 	<link rel="stylesheet" type="text/css" href="css/widgetTabs.css" />
 	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/widgetTabs.js"></script>
 </head>
 
 <body>
 	<div id="widgetTabs" class="wTabsContainer">
 		<ul>
-			<li><a href="#tab1" class="wATabActive">Biografia 1</a><div class="wTabClose">&nbsp;</div></li>
-			<li><a href="#tab2">Tab 2</a><div class="wTabClose">&nbsp;</div></li>
-			<li><a href="#tab2">Tab 3</a><div class="wTabClose">&nbsp;</div></li>
-			<li><a href="#tab2">Tab 4</a><div class="wTabClose">&nbsp;</div></li>
-			<li><a href="#tab2">Tab 5</a><div class="wTabClose">&nbsp;</div></li>
-			<li><a href="#tab2">Tab 6</a><div class="wTabClose">&nbsp;</div></li>
-			<li><a href="#tab2">Tab 7</a><div class="wTabClose">&nbsp;</div></li>
-			<li><a href="#tab2">Tab 8</a><div class="wTabClose">&nbsp;</div></li>
-			<li><a href="#tab2">Tab 9</a><div class="wTabClose">&nbsp;</div></li>
-			<li><a href="#tab2">Tab 10</a><div class="wTabClose">&nbsp;</div></li>
-			<li><a href="#tab2">Tab 11</a><div class="wTabClose">&nbsp;</div></li>
-			<li><a href="#tab2">Tab 12</a><div class="wTabClose">&nbsp;</div></li>
+			<li><div class="contenedorTab wTabActive"><a href="#tab1">Tab 1</a><div class="wTabClose">&nbsp;</div></div></li>
+			<li><div class="contenedorTab"><a href="#tab2">Tab 2</a><div class="wTabClose">&nbsp;</div></div></li>
+			<li><div class="contenedorTab"><a href="#tab3">Tab 3</a><div class="wTabClose">&nbsp;</div></div></li>
+			<li><div class="contenedorTab"><a href="#tab4">Tab 4</a><div class="wTabClose">&nbsp;</div></div></li>
+			<li><div class="contenedorTab"><a href="#tab5">Tab 5</a><div class="wTabClose">&nbsp;</div></div></li>
+			<li><div class="contenedorTab"><a href="#tab6">Tab 6</a><div class="wTabClose">&nbsp;</div></div></li>
+			<li><div class="contenedorTab"><a href="#tab7">Tab 7</a><div class="wTabClose">&nbsp;</div></div></li>
+			<li><div class="contenedorTab"><a href="#tab8">Tab 8</a><div class="wTabClose">&nbsp;</div></div></li>
 		</ul>
-		<div id="tab1" class="wContentTab wTabActive">Contenido 1</div>
+		<div id="tab1" class="wContentTab wTabContentActive">Contenido 1</div>
 		<div id="tab2" class="wContentTab">Contenido 2</div>
+		<div id="tab3" class="wContentTab">Contenido 3</div>
+		<div id="tab4" class="wContentTab">Contenido 4</div>
+		<div id="tab5" class="wContentTab">Contenido 5</div>
+		<div id="tab6" class="wContentTab">Contenido 6</div>
+		<div id="tab7" class="wContentTab">Contenido 7</div>
+		<div id="tab8" class="wContentTab">Contenido 8</div>
 	</div>
 </body>
 </html>
