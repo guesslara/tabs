@@ -1,37 +1,77 @@
 .wTabsContainer {
-  border: 1px solid #FF0000;
+  border: 1px solid #CCC;
 }
 
 .wTabsContainer ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  border-bottom: 0;
+  background: #F0F0F0;
 }
 
 .wTabsContainer ul li {
-  display: inline-block;
-  border: 1px solid #FF0000;
+  display: block;
+  border-left: 1px solid #CCC;
+  border-top: 1px solid #CCC;
+  border-right: 1px solid #CCC;
+  /*border:1px solid #FF0000;*/
+  margin-top: .4em;
+  position: relative;
+  border-radius: .2em;
+  width: 100%;
+  line-height: 1.5em;
+  height: 2.5em;
 }
 
 .wTabsContainer ul li a {
   display: block;
   text-decoration: none;
   padding: .3em;
+  float: left;
+  font-size: .9em;
+  color: #000;
+  border: 1px solid #FF0000;
 }
 
 .wTabsContainer ul li a:hover {
   background: #E1E1E1;
 }
 
-.wTabsContainer .wContentTab {
-  border: 1px solid blue;
-  height: 20em;
+.wTabsContainer ul li a:after {
+  content: "";
+  /*border:1px solid #FF0000;*/
+  float: right;
+  margin-left: 1.7em;
 }
 
-.mostrarTab {
+.wTabsContainer ul li .wATabActive {
+  background: #E1E1E1;
+}
+
+.wTabsContainer .wContentTab {
+  border: 1px solid #CCC;
+  height: 20em;
+  display: none;
+  margin-top: 0em;
+}
+
+.wTabsContainer .wTabActive {
   display: block;
 }
 
 .wTabClose {
-  background: url(img/x.png) no-repeat;
+  background: url(../img/x.png) no-repeat;
+  margin-top: .9em;
+  /*border:1px solid blue;*/
+  height: .9em;
+  right: .3em;
+  width: .9em;
+  float: right;
+  z-index: 20;
+  position: absolute;
+}
+
+.wTabClose:hover {
+  cursor: pointer;
 }
